@@ -3,11 +3,10 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
-        width: '100%',
-        maxWidth: 150,
+        width: 150,
         height: 100,
         borderRadius: 16, 
-        overflow: 'hidden'
+        overflow: 'hidden',
     },
     debit: {
 
@@ -16,7 +15,6 @@ export const styles = StyleSheet.create({
         
     },
     image: {
-        flex: 1,
         width: '100%',
         height: '100%'
     },

@@ -3,6 +3,7 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     root: {
+        paddingTop: 35,
         flexDirection: 'row',
         width: '100%',
         alignItems: 'center',

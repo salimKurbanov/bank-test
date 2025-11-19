@@ -15,5 +15,9 @@ export const Colors = {
 
     // Границы
 
-    // Состояния
+    // Состояния (Expenses)
+    yellow1: '#CC3F02',
+    yellow2: '#FE5900',
+    yellow3: '#FF9332',
+    yellow4: '#FFD8A5'
 }

@@ -5,5 +5,6 @@ export type TypeNavBtn = {
     label?: string,
     gap: number,
     fontSize: number,
+    fontColor?: string,
     callback?: () => void
 }

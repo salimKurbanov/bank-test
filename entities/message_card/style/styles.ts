@@ -11,6 +11,7 @@ export const styles = StyleSheet.create({
         gap: 12,
         paddingHorizontal: 16,
         paddingVertical: 17,
+        height: 70,
     },
     avatar: {
 

@@ -9,6 +9,9 @@ export default function Header() {
         <View style={styles.root}>
             <User name="Charlotte"/>
             <QRBtn />
+            {/* <Pressable onPress={() => router.push("/(modals)/notifications")} style={styles.button}>
+                <Text style={styles.buttonText}>Открыть уведомления</Text>
+            </Pressable> */}
         </View>
     );
 }

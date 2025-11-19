@@ -36,13 +36,13 @@ export default function RootLayout() {
         <SafeAreaView style={{ flex: 1, backgroundColor: Colors.bgScreen}}>
             <Stack>
                 <Stack.Screen 
-                    name="home/index" 
+                    name="(tabs)"
                     options={{ 
                         header: () => <Header />,
                     }} 
                 />
                 <Stack.Screen
-                    name="(modals)/notification"
+                    name="modals/notification"
                     options={{ presentation: "modal", headerShown: false }}
                 />
             </Stack>
