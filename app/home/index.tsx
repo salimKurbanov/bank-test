@@ -2,6 +2,7 @@ import { View, Text, Pressable, StyleSheet } from "react-native";
 import { router } from "expo-router";
 import MessageCard from "@/entities/message_card/MessageCard";
 import { Colors } from "@/shared/constants/colors";
+import Card from "@/entities/card/Card";
 
 export default function HomePage() {
     return (
@@ -16,6 +17,12 @@ export default function HomePage() {
                 type="Money Transfer"
                 date="2024-06-09T12:08:00Z"
                 username="Matthew Billson"
+            />
+            <Card 
+                type={'virtual'}
+                price={10000}
+                cardNumber={3565}
+
             />
         </View>
     );

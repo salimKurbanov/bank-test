@@ -19,8 +19,8 @@ export default function MessageCard({ source, style, price, date, type, username
                     <Price value={price}/>
                 </View>
                 <View style={styles.textContainer}>
-                    <View>
-                        <View></View>
+                    <View style={styles.typeContainer}>
+                        <View style={styles.dot}></View>
                         <Text style={styles.textBottom}>{type}</Text>
                     </View>
                     <Text style={styles.textBottom}>

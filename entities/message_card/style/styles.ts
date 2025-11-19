@@ -40,4 +40,15 @@ export const styles = StyleSheet.create({
         fontSize: 14,
         color: Colors.textTertiary
     },
+    typeContainer: {
+        flexDirection: 'row',
+        gap: 6,
+        alignItems: 'center',
+    },
+    dot: {
+        width: 6,
+        height: 6,
+        backgroundColor: Colors.primary,
+        borderRadius: '50%',
+    }
 })
