@@ -1,3 +1,4 @@
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { SplashScreen, Stack } from "expo-router";
 import { useEffect } from "react";
 
@@ -8,6 +9,8 @@ import { useFonts,
     Inter_700Bold,
     Inter_800ExtraBold
 } from '@expo-google-fonts/inter';
+import { Colors } from '@/shared/constants/colors';
+import Header from '@/widgets/header/Header';
 
 SplashScreen.preventAutoHideAsync(); 
 
@@ -23,7 +26,6 @@ export default function RootLayout() {
 
     useEffect(() => {
         if(loaded) {
-            // Когда шрифт загружен скрываем экран загрузки
             SplashScreen.hide()
         }
     }, [loaded])
@@ -31,12 +33,19 @@ export default function RootLayout() {
     if(!loaded) return null
 
     return (
-        <Stack>
-            <Stack.Screen name="home/index" options={{ title: "Home" }} />
-            <Stack.Screen
-                name="(modals)/notification"
-                options={{ presentation: "modal", headerShown: false }}
-            />
-        </Stack>
+        <SafeAreaView style={{ flex: 1, backgroundColor: Colors.bgScreen}}>
+            <Stack>
+                <Stack.Screen 
+                    name="home/index" 
+                    options={{ 
+                        header: () => <Header />,
+                    }} 
+                />
+                <Stack.Screen
+                    name="(modals)/notification"
+                    options={{ presentation: "modal", headerShown: false }}
+                />
+            </Stack>
+        </SafeAreaView>
     );
 }
