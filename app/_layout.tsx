@@ -11,6 +11,7 @@ import { useFonts,
 } from '@expo-google-fonts/inter';
 import { Colors } from '@/shared/constants/colors';
 import Header from '@/widgets/header/Header';
+import NoticeHeader from '@/entities/notice_header/NoticeHeader';
 
 SplashScreen.preventAutoHideAsync(); 
 
@@ -43,7 +44,10 @@ export default function RootLayout() {
                 />
                 <Stack.Screen
                     name="modals/notification"
-                    options={{ presentation: "modal", headerShown: false }}
+                    options={{ 
+                        presentation: "modal", 
+                        header: () => <NoticeHeader />
+                    }}
                 />
             </Stack>
         </SafeAreaView>

@@ -5,7 +5,9 @@ export const styles = StyleSheet.create({
     root: {
         borderRadius: 12,
         overflow: 'hidden',
-        backgroundColor: Colors.bgSurface
+        backgroundColor: Colors.bgSurface,
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     image: {
         width: '100%',

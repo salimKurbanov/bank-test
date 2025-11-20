@@ -14,6 +14,7 @@ export const Colors = {
     bgSurface: '#181818ff',
 
     // Границы
+    borderPrymary: '#1F1F1F',
 
     // Состояния (Expenses)
     yellow1: '#CC3F02',
